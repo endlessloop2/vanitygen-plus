@@ -444,6 +444,7 @@ main(int argc, char **argv)
 					"---------------------------------------------------\n"
 					"Argument(UPPERCASE) : Coin : Address Prefix\n"
 					"---------------\n"
+					"KPL : Kepler : K\n"
 					"42 : 42coin : 4\n"
 					"AC : Asiacoin : A\n"
 					"ACM : Actinium : N\n"
@@ -1575,6 +1576,15 @@ main(int argc, char **argv)
 					privtype = 239;
 					break;
 			}
+			else
+			if (strcmp(optarg, "KPL")== 0) {
+				fprintf(stderr,
+					"Generating KPL Address\n");
+					addrtype = 45;
+					privtype = 49;
+					break;
+			}
+
 			break;
 
 /*END ALTCOIN GENERATOR*/
